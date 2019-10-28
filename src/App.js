@@ -1,13 +1,12 @@
 import React from 'react';
-import Pokecard from './Pokecard'
-import Pokepack from './Pokepack'
+import Pokegame from './Pokegame'
 import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-      <Pokepack/>
+      <Pokegame/>
     </div>
   );
 }
