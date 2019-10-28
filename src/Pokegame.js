@@ -23,10 +23,12 @@ class Pokegame extends Component {
             let ride = hand2.splice(index, 1)[0]
             hand1.push(ride)
         }
+        let score1 = hand1.reduce((exp, pokemons) => exp+pokemons.base_experience, 0)
+        let score2 = hand2.reduce((exp, pokemons) => exp+pokemons.base_experience, 0)
         return (
             <div className='Pokegame'>
-                <Pokepack pokemons={hand1} />
-                <Pokepack pokemons={hand2} />
+                <Pokepack pokemons={hand1} score={score1} isWinner={score1 > score2 }/>
+                <Pokepack pokemons={hand2} score={score2}  isWinner={score2 > score1 } />
             </div>
         )
     }

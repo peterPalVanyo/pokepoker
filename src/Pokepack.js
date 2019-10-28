@@ -19,6 +19,8 @@ class Pokepack extends Component {
     render() {
         return (
             <div className='Pokepack'>
+                <h3>Total Experience: {this.props.score}</h3>
+                <h2>{this.props.isWinner?'Winner!':'Looser!'}</h2>
                 <div className='Pokepack-cards'>
                     {this.props.pokemons.map((p) => (
                         <Pokecard id={p.id} name={p.name} type={p.type} exp={p.base_experience} />
