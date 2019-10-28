@@ -7,10 +7,10 @@ class Pokecard extends Component{
         const id = idChecker(this.props.id)
         return (
             <div className='Pokecard'>
-                <h1>{this.props.name}</h1>
+                <h1 className='Pokecard-title'>{this.props.name}</h1>
                 <img src={`${POKE_API}${id}.png`} alt='pokemon'/>
-                <h3>Type: {this.props.type}</h3>
-                <h3>EXP: {this.props.exp}</h3>
+                <div className='Pokecard-data'>Type: {this.props.type}</div>
+                <div className='Pokecard-data'>EXP: {this.props.exp}</div>
 
             </div>
         )
