@@ -3,6 +3,12 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.Pokepack-winner {
+    color: salmon;
+}
+.Pokepack-loser {
+    color: seagreen;
+}
 /* .Pokepack-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

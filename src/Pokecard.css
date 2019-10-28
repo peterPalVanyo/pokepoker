@@ -11,8 +11,21 @@
     font-size: 80%;
 }
 .Pokecard-title {
-    margin: 1px 0 0 0 ;
+    margin: 1px 0 0.5px 0 ;
+    font-size: 1.5rem;
 }
-img {
-    max-width: 150px;
+.Pokecard-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border-radius: 5px;
+    background:#eceff1;
+}
+.Pokecard-image img {
+    transition: all ease 500ms;
+}
+.Pokecard-image img:hover {
+    transform: scale(1.25);
+    opacity: 0.9;
 }
